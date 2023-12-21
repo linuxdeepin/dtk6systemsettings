@@ -7,7 +7,7 @@ Qt-based development library for system settings on Deepin.
 
 ### Build dependencies
 
-* Qt >= 5.11
+* Qt >= 6.0
 * cmake >= 3.13
 * doxygen
 
