@@ -16,8 +16,8 @@
 ### 从源代码构建
 
 ```bash
-git clone https://github.com/linuxdeepin/dtksystemsettings.git
-cd dtksystemsettings
+git clone https://github.com/linuxdeepin/dtk6systemsettings.git
+cd dtk6systemsettings
 cmake -B build -DCMAKE_INSTALL_PREFIX=/usr
 cmake --build build
 ```
