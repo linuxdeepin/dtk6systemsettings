@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: dtk6systemsettings
+Upstream-Name: dtksystemsettings
 Upstream-Contact: UnionTech Software Technology Co., Ltd.
-Source: https://github.com/linuxdeepin/dtk6systemsettings
+Source: https://github.com/linuxdeepin/dtksystemsettings
 
 # Config files
 Files: .clang-format *.in
@@ -18,8 +18,8 @@ Files: debian/*
 Copyright: None
 License: CC0-1.0
 
-# git github
-Files: .github/* .gitignore
+# git github ci
+Files: .github/* .gitignore .obs/* .syncexclude
 Copyright: None
 License: CC0-1.0
 
