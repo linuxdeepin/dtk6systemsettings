@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: dtksystemsettings
+Upstream-Name: dtk6systemsettings
 Upstream-Contact: UnionTech Software Technology Co., Ltd.
-Source: https://github.com/linuxdeepin/dtksystemsettings
+Source: https://github.com/linuxdeepin/dtk6systemsettings
 
 # Config files
 Files: .clang-format *.in

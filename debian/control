@@ -9,6 +9,7 @@ Build-Depends:
  qt6-tools-dev,
  qt6-base-dev,
  libdtk6core-dev,
+ libdtkcommon-dev,
  graphviz
 Standards-Version: 4.5.0
 
