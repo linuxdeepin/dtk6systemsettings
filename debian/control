@@ -1,4 +1,4 @@
-Source: dtksystemsettings
+Source: dtk6systemsettings
 Section: libdevel
 Priority: optional
 Maintainer: Deepin Packages Builder <packages@deepin.com>
@@ -6,24 +6,24 @@ Build-Depends:
  debhelper-compat (= 12),
  cmake,
  doxygen,
- qhelpgenerator-qt5 | qttools5-dev-tools,
- qtbase5-dev,
- libdtkcore-dev,
+ qt6-tools-dev,
+ qt6-base-dev,
+ libdtk6core-dev,
  graphviz
 Standards-Version: 4.5.0
 
-Package: libdtksystemsettings1
+Package: libdtk6systemsettings1
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Deepin Tool Kit template library
- libdtksystemsettings is base library of Deepin Qt/C++ applications.
+ libdtk6systemsettings is base library of Deepin Qt/C++ applications.
  .
  This package contains the shared libraries.
 
-Package: libdtksystemsettings-dev
+Package: libdtk6systemsettings-dev
 Architecture: any
-Depends:${misc:Depends}, libdtksystemsettings1( =${binary:Version})
+Depends:${misc:Depends}, libdtk6systemsettings1( =${binary:Version})
 Description: Deepin Tool Kit template devel library
- libdtksystemsettings-dev is base devel library of Deepin Qt/C++ applications.
+ libdtk6systemsettings-dev is base devel library of Deepin Qt/C++ applications.
  .
  This package contains the header files and static libraries.

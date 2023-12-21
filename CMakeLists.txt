@@ -7,9 +7,9 @@ cmake_minimum_required(VERSION 3.13)
 # If do't define version number, specify the version number
 set(DTK_VERSION "5.0.0" CACHE STRING "define project version")
 
-project(DtkSystemSettings
+project(Dtk6SystemSettings
     LANGUAGES CXX
-    HOMEPAGE_URL https://github.com/linuxdeepin/dtksystemsettings
+    HOMEPAGE_URL https://github.com/linuxdeepin/dtk6systemsettings
     DESCRIPTION "dtk library for systemsettings."
     VERSION ${DTK_VERSION}
 )
@@ -23,7 +23,7 @@ else()
     message(SEND_ERROR "not support Prject Version ${PROJECT_VERSION}.")
 endif()
 
-set(LIB_NAME dtksystemsettings)
+set(LIB_NAME dtk6systemsettings)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH}) # Set module path for include() command search
 
 include(DtkUtils) # Include cmake/DtkUtils.cmake
@@ -42,7 +42,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -Wextra")
 set(CMAKE_SHARED_LINKER_FLAGS ${CMAKE_SHARED_LINKER_FLAGS} "-Wl,--as-needed")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(ConfigPackageLocation ${CMAKE_INSTALL_LIBDIR}/cmake/DtkSystemSettings)
+set(ConfigPackageLocation ${CMAKE_INSTALL_LIBDIR}/cmake/Dtk6SystemSettings)
 
 # Install settings
 if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
@@ -87,25 +87,25 @@ target_link_directories(${LIB_NAME} INTERFACE
 )
 
 write_basic_package_version_file(
-    DtkSystemSettingsConfigVersion.cmake
+    Dtk6SystemSettingsConfigVersion.cmake
     VERSION ${DTK_VERSION}
     COMPATIBILITY SameMajorVersion
 )
 
-configure_package_config_file(misc/DtkSystemSettingsConfig.cmake.in
-    DtkSystemSettingsConfig.cmake
-    INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/DtkSystemSettings
+configure_package_config_file(misc/Dtk6SystemSettingsConfig.cmake.in
+    Dtk6SystemSettingsConfig.cmake
+    INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/Dtk6SystemSettings
     PATH_VARS CMAKE_INSTALL_INCLUDEDIR CMAKE_INSTALL_LIBDIR
 )
 
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/DtkSystemSettingsConfig.cmake ${CMAKE_CURRENT_BINARY_DIR}/DtkSystemSettingsConfigVersion.cmake DESTINATION ${ConfigPackageLocation})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/Dtk6SystemSettingsConfig.cmake ${CMAKE_CURRENT_BINARY_DIR}/Dtk6SystemSettingsConfigVersion.cmake DESTINATION ${ConfigPackageLocation})
 
 set(PC_REQUIRES "Qt${QT_VERSION_MAJOR}Core Qt${QT_VERSION_MAJOR}DBus dtkcore")
-configure_file(misc/dtksystemsettings.pc.in dtksystemsettings.pc @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dtksystemsettings.pc DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
+configure_file(misc/dtk6systemsettings.pc.in dtk6systemsettings.pc @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dtk6systemsettings.pc DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
 
 set(DTK_MODULE ${LIB_NAME})
 set(DTK_DEPS "core dbus dtkcore")
 set(DTK_CFG "v2 ltcg")
-configure_file(misc/qt_lib_dtksystemsettings.pri.in qt_lib_dtksystemsettings.pri @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qt_lib_dtksystemsettings.pri DESTINATION "${MKSPECS_INSTALL_DIR}")
+configure_file(misc/qt_lib_dtk6systemsettings.pri.in qt_lib_dtk6systemsettings.pri @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qt_lib_dtk6systemsettings.pri DESTINATION "${MKSPECS_INSTALL_DIR}")
