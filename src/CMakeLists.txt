@@ -51,6 +51,6 @@ install(TARGETS ${LIB_NAME} EXPORT Dtk6SystemSettingsTargets
 
 install(EXPORT Dtk6SystemSettingsTargets
     FILE Dtk6SystemSettingsTargets.cmake
-    NAMESPACE Dtk::
+    NAMESPACE Dtk6::
     DESTINATION ${ConfigPackageLocation}
 )
