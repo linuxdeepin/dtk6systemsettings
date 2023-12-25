@@ -31,7 +31,7 @@ set (DOXYGEN_QHP_NAMESPACE "org.deepin.dtk.systemsettings")
 set (DOXYGEN_QCH_FILE "${LIB_NAME}.qch")
 set (DOXYGEN_QHP_VIRTUAL_FOLDER ${LIB_NAME})
 set (DOXYGEN_HTML_EXTRA_STYLESHEET "" CACHE STRING "Doxygen custom stylesheet for HTML output")
-set(DOXYGEN_TAGFILES "qtcore.tags=qthelp://doc.qt.io/qt-6/" CACHE STRING "Doxygen tag files")
+set(DOXYGEN_TAGFILES "qtcore.tags=qthelp://doc.qt.io/qt-${QT_VERSION_MAJOR}/" CACHE STRING "Doxygen tag files")
 set (DOXYGEN_MACRO_EXPANSION "YES")
 set (DOXYGEN_EXPAND_ONLY_PREDEF "YES")
 set (DOXYGEN_PREDEFINED

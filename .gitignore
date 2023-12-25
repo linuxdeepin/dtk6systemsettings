@@ -43,8 +43,8 @@ Testing/
 # debian tmp files
 debian/tmp
 debian/.debhelper
-debian/libdtk6systemsettings1
-debian/libdtk6systemsettings-dev
+debian/libdtksystemsettings1
+debian/libdtksystemsettings-dev
 debian/files
 debian/*.log
 debian/*.substvars
