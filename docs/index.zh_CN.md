@@ -1,8 +1,8 @@
 @mainpage
 
-# dtk6systemsettings
+# dtksystemsettings
 
-dtk6systemsettings 是deepin/uos系统的系统设置模块，包含系统登陆，账户管理，时间日期，电源管理等相关功能。
+dtksystemsettings 是deepin/uos系统的系统设置模块，包含系统登陆，账户管理，时间日期，电源管理等相关功能。
 
 ## 项目结构
 

@@ -7,7 +7,7 @@ Qt-based development library for system settings on Deepin.
 
 ### Build dependencies
 
-* Qt >= 6.0
+* Qt >= 5.11
 * cmake >= 3.13
 * doxygen
 
@@ -16,8 +16,8 @@ Qt-based development library for system settings on Deepin.
 ### Build from source code
 
 ```bash
-git clone https://github.com/linuxdeepin/dtk6systemsettings.git
-cd dtk6systemsettings
+git clone https://github.com/linuxdeepin/dtksystemsettings.git
+cd dtksystemsettings
 cmake -B build -DCMAKE_INSTALL_PREFIX=/usr
 cmake --build build
 ```

@@ -7,9 +7,9 @@ cmake_minimum_required(VERSION 3.13)
 # If do't define version number, specify the version number
 set(DTK_VERSION "5.0.0" CACHE STRING "define project version")
 
-project(Dtk6SystemSettings
+project(DtkSystemSettings
     LANGUAGES CXX
-    HOMEPAGE_URL https://github.com/linuxdeepin/dtk6systemsettings
+    HOMEPAGE_URL https://github.com/linuxdeepin/dtksystemsettings
     DESCRIPTION "dtk library for systemsettings."
     VERSION ${DTK_VERSION}
 )
