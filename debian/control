@@ -13,7 +13,7 @@ Build-Depends:
  graphviz
 Standards-Version: 4.5.0
 
-Package: libdtk6systemsettings1
+Package: libdtk6systemsettings
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Deepin Tool Kit template library
@@ -23,7 +23,7 @@ Description: Deepin Tool Kit template library
 
 Package: libdtk6systemsettings-dev
 Architecture: any
-Depends:${misc:Depends}, libdtk6systemsettings1( =${binary:Version})
+Depends:${misc:Depends}, libdtk6systemsettings( =${binary:Version})
 Description: Deepin Tool Kit template devel library
  libdtk6systemsettings-dev is base devel library of Deepin Qt/C++ applications.
  .
