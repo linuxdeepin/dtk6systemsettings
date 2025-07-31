@@ -1,6 +1,6 @@
 # Maintainer: ComixHe <heyuming@deepin.org>
 pkgname=dtk6systemsettings-git
-pkgver=6.0.20
+pkgver=6.0.21
 pkgrel=1
 sourcename=dtk6systemsettings
 sourcetars=("$sourcename"_"$pkgver".tar.xz)
