@@ -1,6 +1,6 @@
 # Maintainer: ComixHe <heyuming@deepin.org>
 pkgname=dtk6systemsettings-git
-pkgver=6.0.0
+pkgver=6.6.20
 pkgrel=1
 sourcename=dtk6systemsettings
 sourcetars=("$sourcename"_"$pkgver".tar.xz)
@@ -28,8 +28,7 @@ build() {
     -DQCH_INSTALL_DESTINATION=share/doc/qt \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DDTK_VERSION=$version
+    -DCMAKE_BUILD_TYPE=Release
   ninja
 }
 
